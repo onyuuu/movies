@@ -1,0 +1,33 @@
+*{margin: 0; padding: 0;}
+.container{
+    .loader{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(138, 138, 138);
+        &_text{
+            font-size: 30px;
+        }
+    }
+    .movies{
+        margin: 50px 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(400px, 1fr));
+        gap: 100px;
+        padding: 50px;
+        width: 80%;
+        padding-top: 70px;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 1090px) {
+    .container{
+        .movies{
+            grid-template-columns: 1fr;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+}
